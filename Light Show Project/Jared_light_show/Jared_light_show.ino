@@ -134,7 +134,6 @@ void jingleBells() {
    delay(halfNote);
    lightsOff();
 
-   
    // measure 02
    digitalWrite(CH1, HIGH);
    delay(quarterNote);
