@@ -104,349 +104,6 @@ void lightsOff() {
   digitalWrite(CH4, LOW);
 }
 
-void jingleBells() {
-  delay(1000);
-  // first measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(halfNote);
-
-
-  // second measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(halfNote);
-
-  // third measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  // fourth measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, HIGH);
-  delay(wholeNote);
-
-  // fifth measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  // sixth measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(eighthNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(eighthNote);
-
-  // seventh measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  // eighth measure
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(halfNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(halfNote);
-
-  // 9th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(halfNote);
-
-
-  // 10th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(halfNote);
-
-  // 11th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  // 12th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, HIGH);
-  delay(wholeNote);
-
-  // 13th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  // 14th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(eighthNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(eighthNote);
-
-  // 15th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, HIGH);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  digitalWrite(CH1, LOW);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, HIGH);
-  digitalWrite(CH4, LOW);
-  delay(quarterNote);
-
-  // 16th measure
-  digitalWrite(CH1, HIGH);
-  digitalWrite(CH2, LOW);
-  digitalWrite(CH3, LOW);
-  digitalWrite(CH4, LOW);
-  delay(halfNote);
-
-  // big ending
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-  bigFinish();
-
-
-  // turn off LEDs
-  lightsOff();
-}
-
 void bigFinish () {
   digitalWrite(CH1, HIGH);
   digitalWrite(CH2, HIGH);
@@ -461,170 +118,272 @@ void bigFinish () {
   delay(lightsOffDelay);
 }
 
-// Song is 276 seconds long
-// 138 measures
+/*===============================Jingle Bells======================================*/
+void jingleBells() {
+  delay(1000);
+  // measure 01
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(halfNote);
+   lightsOff();
+
+   
+   // measure 02
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(halfNote);
+   lightsOff();
+   
+   // measure 03
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   // measure 04
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH2, HIGH);
+   digitalWrite(CH3, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(wholeNote);
+   lightsOff();
+
+   // measure 05
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH3, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   // measure 06
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH3, HIGH);
+   delay(eighthNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(eighthNote);
+   lightsOff();
+
+   // measure 07
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   // measure 08
+   digitalWrite(CH3, HIGH);
+   delay(halfNote);
+   lightsOff();
+
+   digitalWrite(CH4, HIGH);
+   delay(halfNote);
+   lightsOff();
+
+   // measure 09
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(halfNote);
+   lightsOff();
+   
+   // measure 10
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(halfNote);
+   lightsOff();
+   
+   // measure 11
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   // measure 12
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH2, HIGH);
+   digitalWrite(CH3, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(wholeNote);
+   lightsOff();
+
+   // 13th measure
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH2, HIGH);
+   digitalWrite(CH3, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   // measure 14
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH1, HIGH);
+   digitalWrite(CH3, HIGH);
+   delay(eighthNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   digitalWrite(CH4, HIGH);
+   delay(eighthNote);
+   lightsOff();
+
+   // measure 15
+   digitalWrite(CH1, HIGH);
+   delay(quarterNote);
+   lightsOff();
+   
+   digitalWrite(CH4, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH2, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   digitalWrite(CH3, HIGH);
+   delay(quarterNote);
+   lightsOff();
+
+   // measure 16
+   digitalWrite(CH1, HIGH);
+   delay(halfNote);
+   lightsOff();
+
+   // big ending
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+   bigFinish();
+
+   // turn off LEDs
+   lightsOff();
+}
+
+
+/*===============================Smells like Teen Spirit===========================
+  Song is 276 seconds long
+  138 measures
+*/
 void teenSpirit() {
   delay(1000);
-  // measure 001
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
   
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 002
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 003
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 004
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 005
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 006
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 007
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 008
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 009
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  // measure 010
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
 }
 /********************************************************************************/
 /*Function sendMP3Command: seek for a 'c' command and send it to MP3            */
