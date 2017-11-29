@@ -120,7 +120,7 @@ void bigFinish () {
 
 /*===============================Jingle Bells======================================*/
 void jingleBells() {
-  delay(1000);
+  delay(400);
   // measure 01
    digitalWrite(CH1, HIGH);
    delay(quarterNote);
@@ -382,7 +382,7 @@ void jingleBells() {
   138 measures
 */
 void teenSpirit() {
-  delay(1000);
+  delay(400);
   
 }
 /********************************************************************************/
