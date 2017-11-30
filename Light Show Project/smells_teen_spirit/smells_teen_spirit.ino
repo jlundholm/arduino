@@ -1,80 +1,90 @@
 /* ===============================================================
-      Project: 4 Channel 5V Relay Module
-       Author: Jared L
-      Created: 29 Nov 2017
-  Arduino IDE: 1.8.5
-  Description: smells like teen spirit using 4 channel Relay and 4 LED light strands
-================================================================== */
+      Project: 4 Channel 5V Relay Module lightshow
+       Author: Jared Lundholm
+      Created: 30 Nov 2017
+      Arduino IDE: 1.8.5
+      Version 0.0.1
+      Description: smells like teen spirit using 4 channel Relay and 4 LED light strands
+  ================================================================== */
 
- /* 
-  Connect 5V on Arduino to VCC on Relay Module
-  Connect GND on Arduino to GND on Relay Module 
-  Connect GND on Arduino to the Common Terminal (middle terminal) on Relay Module.
-  */
- 
- int CH1 = 8;
- int CH2 = 9;
- int CH3 = 10;
- int CH4 = 11;
- int eighthNote = 250;
- int quarterNote = 500;
- int halfNote = 1000;
- int wholeNote = 2000;
- int finish = 30;
- int lightsOffDelay = 50;
- 
- void setup(){
-   //Setup all the Arduino Pins
-   pinMode(CH1, OUTPUT);
-   pinMode(CH2, OUTPUT);
-   pinMode(CH3, OUTPUT);
-   pinMode(CH4, OUTPUT);
-   
+int CH1 = 8;
+int CH2 = 9;
+int CH3 = 10;
+int CH4 = 11;
+int eighthNote = 250;
+int quarterNote = 500;
+int halfNote = 1000;
+int wholeNote = 2000;
+int lightsOffDelay = 50;
+
+void setup() {
+  //Setup all the Arduino Pins
+  pinMode(CH1, OUTPUT);
+  pinMode(CH2, OUTPUT);
+  pinMode(CH3, OUTPUT);
+  pinMode(CH4, OUTPUT);
+
   // measure 001
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
   lightsOff();
   // measure 002
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
   lightsOff();
   // measure 003
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -82,15 +92,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -98,15 +108,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -114,15 +124,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -130,15 +140,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -146,15 +156,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -162,15 +172,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -178,15 +188,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -194,15 +204,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -210,15 +220,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -226,15 +236,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -242,15 +252,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -258,15 +268,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -274,15 +284,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -290,15 +300,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -306,15 +316,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -322,15 +332,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -338,15 +348,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -354,15 +364,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -370,15 +380,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -386,15 +396,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -402,15 +412,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -418,15 +428,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -434,15 +444,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -450,15 +460,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -466,15 +476,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -482,15 +492,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -498,15 +508,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -514,15 +524,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -530,15 +540,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -546,15 +556,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -562,15 +572,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -578,15 +588,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -594,15 +604,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -610,15 +620,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -626,15 +636,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -642,15 +652,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -658,15 +668,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -674,15 +684,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -690,15 +700,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -706,15 +716,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -722,15 +732,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -738,15 +748,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -754,15 +764,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -770,15 +780,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -786,15 +796,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -802,15 +812,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -818,15 +828,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -834,15 +844,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -850,15 +860,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -866,15 +876,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -882,15 +892,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -898,15 +908,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -914,15 +924,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -930,15 +940,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -946,15 +956,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -962,15 +972,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -978,15 +988,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -994,15 +1004,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1010,15 +1020,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1026,15 +1036,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1042,15 +1052,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1058,15 +1068,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1074,15 +1084,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1090,15 +1100,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1106,15 +1116,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1122,15 +1132,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1138,15 +1148,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1154,15 +1164,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1170,15 +1180,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1186,15 +1196,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1202,15 +1212,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1218,15 +1228,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1234,15 +1244,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1250,15 +1260,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1266,15 +1276,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1282,15 +1292,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1298,15 +1308,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1314,15 +1324,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1330,15 +1340,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1346,15 +1356,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1362,15 +1372,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1378,15 +1388,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1394,15 +1404,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1410,15 +1420,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1426,15 +1436,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1442,15 +1452,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1458,15 +1468,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1474,15 +1484,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1490,15 +1500,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1506,15 +1516,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1522,15 +1532,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1538,15 +1548,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1554,15 +1564,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1570,15 +1580,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1586,15 +1596,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1602,15 +1612,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1618,15 +1628,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1634,15 +1644,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1650,15 +1660,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1666,15 +1676,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1682,15 +1692,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1698,15 +1708,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1714,15 +1724,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1730,15 +1740,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1746,15 +1756,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1762,15 +1772,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1778,15 +1788,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1794,15 +1804,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1810,15 +1820,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1826,15 +1836,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1842,15 +1852,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1858,15 +1868,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1874,15 +1884,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1890,15 +1900,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1906,15 +1916,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1922,15 +1932,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1938,15 +1948,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1954,15 +1964,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1970,15 +1980,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -1986,15 +1996,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2002,15 +2012,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2018,15 +2028,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2034,15 +2044,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2050,15 +2060,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2066,15 +2076,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2082,15 +2092,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2098,15 +2108,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2114,15 +2124,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2130,15 +2140,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2146,15 +2156,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2162,15 +2172,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2178,15 +2188,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2194,15 +2204,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2210,15 +2220,15 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
@@ -2226,23 +2236,23 @@
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
-  
+
   digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
- }
- 
- void loop(){
-   
- }
+}
+
+void loop() {
+
+}
 
 void lightsOff() {
   digitalWrite(CH1, LOW);
