@@ -1,548 +1,746 @@
 /* ===============================================================
       Project: 4 LED Light Show
       Author: Jared Lundholm
-      Created: 04 Dec 2017
+      Created: 06 Dec 2017
       Arduino IDE: 1.8.5
-      Version 0.0.2
-      Description: Carol of th Bells using 4 LEDs 170 BPM 3/4 time 133 Seconds
+      Version 0.0.4
+      Description: Carol of the Bells using 4 LEDs 144 BPM 3/4 time 130 Seconds
       Measures
-      Intro    : 4 measures x2 Starts 5 seconds in
+      Intro    : 8 measures - 4 measures and repeat
       Round 01 : 32 measures
       Round 02 : 32 measures
       Round 03 : 28 measures Goes from 1 to 2
-      End      : 4/5 measures
-      around 100 measures
-
-      1.412 seconds per measure
+      End      : 5 measures
+      105 measures
   ================================================================== */
 
 int CH1 = 8;
 int CH2 = 9;
 int CH3 = 10;
 int CH4 = 11;
-int eighthNote = 176;
-int quarterNote = 352;
-int halfNote = 705;
-int wholeNote = 1411;
-int lightsOffDelay = 50;
+int eighthNote = 206;
+int quarterNote = 412;
+int dottedQuarterNote = 1236;
+int halfNote = 824;
+int wholeNote = 1648;
+int lightsOffDelay = 20;
 
 void setup() {
+  // skip intro
+  delay(6000);
+  
   // measure 001
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 002
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
 
   // measure 003
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 004
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 005
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 006
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 007
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 008
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 009
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 010
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
+  
   // measure 011
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 012
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
 
   // measure 013
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 014
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 015
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 016
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
+  lightsOff();
+  
+  digitalWrite(CH4, HIGH);
+  delay(dottedQuarterNote);
   lightsOff();
   
   // measure 017
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 018
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 019
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 020
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
+  
   // measure 021
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 022
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
 
   // measure 023
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 024
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 025
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
+  digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
+  lightsOff();
+  
+  digitalWrite(CH4, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   // measure 026
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
+  digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
+  lightsOff();
+  
+  digitalWrite(CH4, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   // measure 027
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH2, HIGH);
+  digitalWrite(CH4, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
+  lightsOff();
+  
+  digitalWrite(CH4, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   // measure 028
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
   
-  digitalWrite(CH3, HIGH);
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
+  lightsOff();
+  
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 029
   digitalWrite(CH1, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH3, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   // measure 030
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+  
+  digitalWrite(CH3, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
-  digitalWrite(CH3, HIGH);
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
+  
   // measure 031
   digitalWrite(CH1, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH3, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   // measure 032
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
+  digitalWrite(CH2, HIGH);
+  delay(eighthNote);
+  lightsOff();
+  
+  digitalWrite(CH3, HIGH);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
   delay(quarterNote);
   lightsOff();
-  
-  digitalWrite(CH3, HIGH);
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
 
   // measure 033
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 034
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 035
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 036
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 037
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 038
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 039
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
   
   // measure 040
-  digitalWrite(CH1, HIGH);
+  digitalWrite(CH3, HIGH);
   delay(quarterNote);
   lightsOff();
   
   digitalWrite(CH2, HIGH);
-  delay(quarterNote);
+  delay(eighthNote);
   lightsOff();
   
   digitalWrite(CH3, HIGH);
+  delay(eighthNote);
+  lightsOff();
+
+  digitalWrite(CH1, HIGH);
   delay(quarterNote);
   lightsOff();
+  
   // measure 041
   digitalWrite(CH1, HIGH);
   delay(quarterNote);
@@ -1394,4 +1592,3 @@ void lightsOff() {
   digitalWrite(CH3, LOW);
   digitalWrite(CH4, LOW);
 }
-
