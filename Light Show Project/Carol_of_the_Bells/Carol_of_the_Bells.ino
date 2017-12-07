@@ -3,7 +3,7 @@
       Author: Jared Lundholm
       Created: 07 Dec 2017
       Arduino IDE: 1.8.5
-      Version 0.0.5
+      Version 0.0.6
       Description: Carol of the Bells using 4 LEDs 144 BPM 3/4 time 130 Seconds
       Measures
       Intro    : 8 measures - 4 measures and repeat
@@ -19,7 +19,7 @@ int CH2 = 9;
 int CH3 = 10;
 int CH4 = 11;
 int eighthNote = 206; // original 206
-int quarterNote = 405;  //original 412
+int quarterNote = 390;  //original 412
 int dottedQuarterNote = 1236;
 
 void setup() {
@@ -1942,23 +1942,6 @@ void setup() {
   lightsOff();
 
   // measure 105
-  digitalWrite(CH4, HIGH);
-  delay(quarterNote);
-  lightsOff();
-  
-  digitalWrite(CH3, HIGH);
-  delay(eighthNote);
-  lightsOff();
-
-  digitalWrite(CH4, HIGH);
-  delay(eighthNote);
-  lightsOff();
-  
-  digitalWrite(CH1, HIGH);
-  delay(quarterNote);
-  lightsOff();
-
-  // measure 106
   digitalWrite(CH1, HIGH);
   digitalWrite(CH4, HIGH);
   delay(dottedQuarterNote);
