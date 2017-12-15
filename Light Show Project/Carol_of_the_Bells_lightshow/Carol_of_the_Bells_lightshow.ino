@@ -1,9 +1,9 @@
 /* ===============================================================
       Project: 4 LED Light Show
       Author: Jared Lundholm
-      Created: 07 Dec 2017
+      Created: 14 Dec 2017
       Arduino IDE: 1.8.5
-      Version 0.0.7
+      Version 0.0.8
       Description: Carol of the Bells using 4 LEDs 144 BPM 3/4 time 130 Seconds
       Measures
       Intro    : 8 measures - 4 measures and repeat
@@ -70,6 +70,12 @@ int CH1 = 8;
 int CH2 = 9;
 int CH3 = 10;
 int CH4 = 11;
+
+// How many times do you want the repeat the show - 1?
+int songPlayNumber = 4;
+int songPlayTest = 0;
+
+// Notes
 int eighthNote = 206;
 int quarterNote = 390;
 int dottedQuarterNote = 1236;
@@ -2127,7 +2133,11 @@ void sendMP3Command(char c) {
     case '1':
       Serial.println("Play folder 1");
       sendCommand(CMD_FOLDER_CYCLE, 0x0101);
-      song();
+      while (songPlayTest < songPlayNumber) {
+        song();
+        songPlayTest++;
+        delay(1236);
+      }
       break;
 
     case '2':
