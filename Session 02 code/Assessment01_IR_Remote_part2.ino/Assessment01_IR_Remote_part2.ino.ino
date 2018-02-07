@@ -36,23 +36,15 @@ void loop() {
   switch(results.value) {
   case 0xFF6897: digitalWrite(leftLED, HIGH);    break;
   case 0xFF30CF: digitalWrite(leftLED, LOW);    break;
-  case 0xFF18E7: digitalWrite(rightLED, HIGH);    break;
-  case 0xFF7A85: digitalWrite(rightLED, LOW);    break;
-  case 0xFF10EF: digitalWrite(leftLED, HIGH);
-                 delay(500);
-                 digitalWrite(leftLED, LOW);
-                 delay(500);
-                 break;
-  case 0xFF38C7: digitalWrite(rightLED, HIGH);
-                 delay(500);
-                 digitalWrite(rightLED, LOW);
-                 delay(500);
-                 break;
+  case 0xFF18E7: Serial.println("2");    break;
+  case 0xFF7A85: Serial.println("3");    break;
+  case 0xFF10EF: Serial.println("4");    break;
+  case 0xFF38C7: Serial.println("5");    break;
   case 0xFF5AA5: Serial.println("6");    break;
   case 0xFF42BD: Serial.println("7");    break;
   case 0xFF4AB5: Serial.println("8");    break;
   case 0xFF52AD: Serial.println("9");    break;
-  case 0xFFFFFFFF: Serial.println(" REPEAT");break;  
+  case 0xFFFFFFFF: Serial.println(" REPEAT");    break;  
 
   default: 
     Serial.println(" other button   ");
