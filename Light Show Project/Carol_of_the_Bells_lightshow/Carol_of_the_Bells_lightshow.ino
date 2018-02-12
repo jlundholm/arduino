@@ -72,7 +72,7 @@ int CH3 = 10;
 int CH4 = 11;
 
 // How many times do you want the repeat the show - 1?
-int songPlayNumber = 4;
+int songPlayNumber = 56;
 int songPlayTest = 0;
 
 // Notes
