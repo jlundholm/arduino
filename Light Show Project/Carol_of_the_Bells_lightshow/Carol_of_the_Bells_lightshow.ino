@@ -69,10 +69,10 @@ String mp3Answer;           // Answer from the MP3.
 int CH1 = 8;
 int CH2 = 9;
 int CH3 = 10;
-int CH4 = 11;
+int CH4 = 12;
 
 // How many times do you want the repeat the show - 1?
-int songPlayNumber = 56;
+int songPlayNumber = 1;
 int songPlayTest = 0;
 
 // Notes
@@ -2136,7 +2136,7 @@ void sendMP3Command(char c) {
       while (songPlayTest < songPlayNumber) {
         song();
         songPlayTest++;
-        delay(1236);
+        delay(1233);
       }
       break;
 
