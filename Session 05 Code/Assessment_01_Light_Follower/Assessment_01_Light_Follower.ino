@@ -1,8 +1,3 @@
-/*
-A simple light follower
- 
-author: Arturo Guadalupi <a.guadalupi@arduino.cc>
- */
 #include <Servo.h>
 Servo myservo;
 int up_average;
@@ -13,9 +8,9 @@ int A2_val;
 int A3_val;
 int val = 90;
 int diff;
-const int threshold = 25; // original threshold 50
+const int threshold = 50;
+
 void setup() {
-  Serial.begin(9600);
   pinMode(A0, INPUT); 
   pinMode(A1, INPUT);
   pinMode(A2, INPUT);
@@ -48,15 +43,7 @@ void loop() {
       myservo.write(val);
       }
     }
-  Serial.print("D ");
-  Serial.println(down_average);
-  Serial.print("U ");
-  Serial.println(up_average);
-  Serial.print("Diff ");
-  Serial.println(diff);
-  Serial.print("V ");
-  Serial.println(val);
-  delay(25); //original delay 25
+  delay(25);
 }
 
 
