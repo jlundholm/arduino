@@ -9,23 +9,21 @@ void setup() {
   delay(300);
   Keyboard.releaseAll();
   delay(300);
-  Keyboard.println("notepad");
+  Keyboard.println("firefox");
   delay(500);
-  Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press(KEY_LEFT_SHIFT);
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
-  delay(800);
-  Keyboard.press(KEY_LEFT_ARROW);
-  Keyboard.release(KEY_LEFT_ARROW);
-  delay(500);
+  delay(2000);
+  Keyboard.println("https://login.syd-1.linewize.net/");
+  delay(1000);
   Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
-  //Keyboard.releaseAll();
-  delay(500);
-
-  Keyboard.print("Hello World");
-  delay(100);
+  Keyboard.releaseAll();
+  delay(2000);
+  Keyboard.println("jlundholm");
+  Keyboard.press(KEY_TAB);
+  Keyboard.releaseAll();
+  delay(1000);
+  Keyboard.println("");
   Keyboard.releaseAll();
 }
 void loop() {
