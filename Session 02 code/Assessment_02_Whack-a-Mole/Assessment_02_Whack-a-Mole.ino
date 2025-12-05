@@ -4,18 +4,18 @@
 
 //Declare your variables here
 int mole1LED = 9;      //LED for first mole
-
+int mole2LED = 5;
 int mole1Switch = 12;  //mole 1 switch
-
+int mole2Switch = 2;
 int successLED = 6; //LED if successful mole whack
-
+int failLED = 7;
 
 
 void setup() {
   pinMode(mole1LED, OUTPUT);
-
+  pinMode(mole2LED, OUTPUT);
   pinMode(mole1Switch, INPUT_PULLUP);
-
+  pinMode(mole2Switch, INPUT_PULLUP);
   pinMode(successLED, OUTPUT);
   pinMode(failLED, OUTPUT);
   randomSeed(millis());     //initialize random number generator
@@ -48,11 +48,11 @@ void moleWhack(int moleSwitch, int moleLED) {
   }
   //Timed out - If we get here then mole was not whacked
   digitalWrite(moleLED, LOW);           //turn off mole light to prepare for next mole
-
+  digitalWrite(failLED, HIGH);
   delay(100);                           //blink delay
   digitalWrite(failLED, LOW);           //blink off
   delay(100);
-
+  digitalWrite(failLED, HIGH);
   delay(100);                           //blink delay
   digitalWrite(failLED, LOW);           //blink off
 }
